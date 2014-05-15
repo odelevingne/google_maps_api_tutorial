@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <title>Simple markers</title>
+    <title>Nico's London</title>
     <style>
       html, body, #map-canvas {
         height: 100%;
@@ -24,6 +24,8 @@ function initialize() {
   }
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
+  var nicoFace = 'public/beauty.png';
+
   var marker = new google.maps.Marker({
       position: tesco,
       map: map,
@@ -32,7 +34,8 @@ function initialize() {
   var markerTwo = new google.maps.Marker({
     position: home,
     map: map,
-    title: 'Where I actually live!'
+    title: 'Where I actually live!',
+    icon: nicoFace
   })
 }
 
