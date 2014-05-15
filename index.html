@@ -37,6 +37,14 @@ function initialize() {
     title: 'Where I actually live!',
     icon: nicoFace
   })
+  var contentString = 'hello';
+
+  var infowindow = new google.maps.InfoWindow({
+      content: contentString
+  });
+  google.maps.event.addListener(markerTwo, 'click', function() {
+    infowindow.open(map,markerTwo);
+  });
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
