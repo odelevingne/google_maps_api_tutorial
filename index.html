@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Simple markers</title>
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+function initialize() {
+  var tesco = new google.maps.LatLng(51.538238, -0.076490);
+
+  var home = new google.maps.LatLng(51.537722, -0.081421);
+
+  var mapOptions = {
+    zoom: 16,
+    center: home
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var marker = new google.maps.Marker({
+      position: tesco,
+      map: map,
+      title: 'Shitty Tesco!'
+  });
+  var markerTwo = new google.maps.Marker({
+    position: home,
+    map: map,
+    title: 'Where I actually live!'
+  })
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
+</html>
