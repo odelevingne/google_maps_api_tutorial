@@ -1,0 +1,57 @@
+html, body, #map-canvas {
+        position:relative;
+        height: 100%;
+        margin-top: 0px;
+        padding: 0px;
+        z-index:1;
+      }
+      #overlay {
+        position: absolute;
+        z-index:2;
+        background-color: #aaa;
+        color: white;
+        font-family: Verdana;
+        border-radius: 5px;
+        padding: 5px;
+        margin-top: 5%;
+        margin-right: 12%;
+        margin-left: 12%;
+        opacity: 0.9;
+      }
+
+      #overlay h1 {
+        font-size: 15px;
+        text-align: center;
+      }
+
+      #overlay p {
+        font-size: 11px;
+      }
+      
+      #whole_thing :hover {
+        background-color: #999;
+        border: #aaa;
+        border-size: 10px;
+      }
+      #whole_thing :active{
+        background-color: #888;
+      }
+
+      #overlay-git {
+        margin-bottom: 50%;
+        position: absolute;
+        z-index:5;
+        size: absolute;
+        height: 25%;
+        width: 25%;
+        margin-top: 75%;
+        margin-left: 5%;
+      }
+
+      #overlay-git a img {
+        height: 25%;
+        width: 25%;
+      }
+
+
+      
