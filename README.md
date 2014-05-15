@@ -9,7 +9,7 @@ Heroku
 
 Objectives of exercise 
 ----
-Familiarizing with a novel API and learning to transform it into a working Heroku app.
+Familiarizing with a novel API and learning to transform it into a working Heroku app while having a few good laughs.
 
 Technologies used
 ----
