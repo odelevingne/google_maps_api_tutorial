@@ -1,6 +1,6 @@
 Where is Beauvoir
 ===
-Playing around with the Google API and Javascript to answer a question Nico has been asked many times. Where is Beauvoir Town?
+Playing around with the Google API and Javascript to answer a question Nico has been asked many times: Where is Beauvoir Town?
 ![](public/theapp.png)
 
 Heroku
